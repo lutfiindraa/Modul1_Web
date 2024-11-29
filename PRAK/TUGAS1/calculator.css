@@ -1,0 +1,98 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.calculator {
+  width: 350px;
+  background-color: #1c1c1e;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border: 1px solid #444;
+}
+
+.display {
+  background-color: #333;
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 60px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.history {
+  background-color: #444;
+  color: #b3b3b3;
+  font-size: 1rem;
+  padding: 10px;
+  height: 40px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  text-align: right;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+button {
+  background: linear-gradient(135deg, #5f2c82, #639fdb);
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #639fdb, #5f2c82);
+  transform: scale(1.05);
+}
+
+button:active {
+  background: #333;
+  transform: scale(0.98);
+}
+
+button:nth-child(4n) {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #fff;
+}
+
+button:nth-child(4n):hover {
+  background: linear-gradient(135deg, #ffd200, #f7971e);
+}
+
+/* Button styling for clear and delete */
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3) {
+  background-color: #ff5e57;
+}
+
+button:nth-child(1):hover,
+button:nth-child(2):hover,
+button:nth-child(3):hover {
+  background-color: #ff6e67;
+}
+
+/* Styling for clear all and delete buttons */
+button:nth-child(2):hover {
+  background-color: #ff9e67;
+}
